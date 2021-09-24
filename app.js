@@ -1,4 +1,3 @@
-// Movie Class: Represents a Movie
 class Movie {
   constructor(title, description, review) {
     this.title = title;
@@ -44,10 +43,7 @@ class UI {
     const container = document.querySelector(".container");
     const form = document.getElementById("movie-form");
     container.insertBefore(div, form);
-
-    // Vanish in 3 seconds
-    //setTimeout(() => document.querySelector(".alert").remove(), 3000);
-  }
+}
 
   static clearFields() {
     document.querySelector("#title").value = "";
@@ -56,6 +52,7 @@ class UI {
   }
 }
 
+//  /*taken from source...*/
 // Store Class: Handles Storage
 class Store {
   static getMovies() {
